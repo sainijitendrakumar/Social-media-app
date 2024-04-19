@@ -3,6 +3,7 @@ import { databases } from '../../Appwrite/Auth'
 import conf from '../../conf/conf'
 import { Query } from 'appwrite'
 import PostCard from '../../components/PostCard'
+import '../Home/style.css'
 
 function Posts({userid}) {
   const[data,setData]=useState([''])
@@ -36,10 +37,10 @@ function Posts({userid}) {
   )
   }
   return (
-    <>
-    <div className='w-full h-screen md:grid md:grid-cols-7' >
+   <>
+    <div className='card' >
       {data && data.length!==0 && data.map((item)=>(
-        <div key={item.$id} className='w-full h-3/4 m-3'>
+        <div key={item.$id} className='lala m-3 rounded-md'>
           <PostCard item={item}/>
         </div>
       ))}
