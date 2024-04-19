@@ -1,6 +1,7 @@
 import React from 'react'
 import { bucket } from '../../Appwrite/Auth'
 import conf from '../../conf/conf'
+import './style.css'
 
 
 function HomePostCard({item}) {
