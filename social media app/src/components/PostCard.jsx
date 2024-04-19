@@ -4,6 +4,7 @@ import conf from '../conf/conf'
 import { edit } from '../Store/AuthSlice'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import "../Home/style.css"
 
 
 function PostCard({ item }) {
@@ -24,14 +25,14 @@ function PostCard({ item }) {
     })
   }
   return (
-    <div className="max-w-xs m-2 bg-blue-gray-200 border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700" key={item.$id}>
-      <a href="#">
-        {item.featuredImage && <img className="rounded-2xl " src={bucket.getFileView(conf.appwriteBucketId, item.featuredImage)} alt="" />}
-      </a>
+    <div className='cardimg ' key={item.$id}>
+      
+        {item.featuredImage && <img className="rounded " src={bucket.getFileView(conf.appwriteBucketId, item.featuredImage)} alt="" />}
+      
       <div className="p-3">
-        <a href="#">
+        
           <h5 className="mb-1 text-base font-bold tracking-tight text-gray-900 dark:text-white">{item && item.title.slice(0,15)}</h5>
-        </a>
+       
         <p className="mb-2 font-normal text-gray-700 dark:text-gray-400">{item && item.discription}</p>
          <div className='flex flex-row '>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 cursor-pointer" onClick={editPost}>
