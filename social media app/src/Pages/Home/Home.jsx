@@ -2,6 +2,7 @@ import React, { useState,useEffect } from 'react'
 import { databases } from '../../Appwrite/Auth'
 import conf from '../../conf/conf'
 import HomePostCard from './HomePostCard'
+import './style.css'
 
 
 function Home() {
