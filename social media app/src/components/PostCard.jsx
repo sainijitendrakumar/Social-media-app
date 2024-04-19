@@ -4,7 +4,7 @@ import conf from '../conf/conf'
 import { edit } from '../Store/AuthSlice'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import "../Home/style.css"
+import '../Pages/Home/style.css'
 
 
 function PostCard({ item }) {
