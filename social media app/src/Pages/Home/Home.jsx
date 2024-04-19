@@ -35,10 +35,10 @@ function Home() {
 
   return (
     <>
-    <div className='w-full h-screen md:grid md:grid-cols-7'>
+    <div className='card'>
         {data && data.length!==0 && data.map((item)=>(
-        <div key={item.$id} className='m-2 w-full h-3/4'>
-          <HomePostCard item={item}/>
+        <div key={item.$id} className='lala m-3 rounded-md'>
+          <HomePostCard item={item} />
         </div>
       ))}
       
