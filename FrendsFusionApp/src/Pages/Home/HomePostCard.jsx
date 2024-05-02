@@ -11,7 +11,7 @@ function HomePostCard({ item }) {
       {item.featuredImage && <img className='rounded' src={bucket.getFileView(conf.appwriteBucketId, item.featuredImage)} alt="" />}
         <div className="p-3">
         <h5 className="mb-2 text-base font-bold tracking-tight text-gray-900 dark:text-white">{item.title}</h5>
-        <p className="mb-2  font-normal text-gray-900 dark:text-gray-400">{parse(item && item.discription)}</p>
+        <div className="mb-2  font-normal text-gray-900 dark:text-gray-400">{parse(item && item.discription)}</div>
       </div>
     </div>
 
