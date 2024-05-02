@@ -23,7 +23,7 @@ function Login() {
       console.log(error);
       alert(error)
     }
-    window.location.reload();
+    // window.location.reload();
   }
 
   return (
