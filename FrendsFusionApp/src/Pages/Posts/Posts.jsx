@@ -40,7 +40,7 @@ function Posts({userid}) {
     <>
     <div className='card pt-16' >
       {data && data.length!==0 && data.map((item)=>(
-        <div key={item.$id} className='lala m-3 rounded-md'>
+        <div key={item && item.$id} className='lala m-3 rounded-md'>
           <PostCard item={item}/>
         </div>
       ))}
