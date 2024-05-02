@@ -1,1 +1,5 @@
-FrendsFusionApp
+{
+  "rewrites":[
+    {"source":"/(.*)","destination":"/"}
+  ]
+}
