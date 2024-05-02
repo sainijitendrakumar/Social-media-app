@@ -34,7 +34,7 @@ function PostCard({ item }) {
         
           <h5 className="mb-1 text-base font-bold tracking-tight text-gray-900 dark:text-white">{item && item.title.slice(0,15)}</h5>
        
-        <p className="mb-2 font-normal text-gray-700 dark:text-gray-400">{parse(item && item.discription)}</p>
+        <div className="mb-2 font-normal text-gray-700 dark:text-gray-400">{parse(item && item.discription)}</div>
          <div className='flex flex-row '>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 cursor-pointer" onClick={editPost}>
             <path d="m5.433 13.917 1.262-3.155A4 4 0 0 1 7.58 9.42l6.92-6.918a2.121 2.121 0 0 1 3 3l-6.92 6.918c-.383.383-.84.685-1.343.886l-3.154 1.262a.5.5 0 0 1-.65-.65Z" />
